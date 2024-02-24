@@ -1,0 +1,126 @@
+.checkout {
+  width: 100%;
+  position: relative;
+
+  .card {
+    width: 100%;
+    max-width: 800px;
+    padding: 1rem;
+    h3 {
+      font-weight: 300;
+    }
+  }
+  .colum{
+    width: 100%;
+      display: flex;
+  
+      div {
+        width: 100%;
+      }
+  
+      label {
+        display: block;
+        font-size: 1.4rem;
+        font-weight: 500;
+      }
+      input[type="text"],
+      .select,
+      .card-details {
+        display: block;
+        font-size: 1.6rem;
+        font-weight: 300;
+        padding: 1rem;
+        margin: 1rem auto;
+        width: 100%;
+        border: 1px solid #777;
+        border-radius: 3px;
+        outline: none;
+      }
+  }
+
+
+  // form {
+  //   width: 100%;
+  //   display: flex;
+
+  //   div {
+  //     width: 100%;
+  //   }
+
+  //   label {
+  //     display: block;
+  //     font-size: 1.4rem;
+  //     font-weight: 500;
+  //   }
+  //   input[type="text"],
+  //   .select,
+  //   .card-details {
+  //     display: block;
+  //     font-size: 1.6rem;
+  //     font-weight: 300;
+  //     padding: 1rem;
+  //     margin: 1rem auto;
+  //     width: 100%;
+  //     border: 1px solid #777;
+  //     border-radius: 3px;
+  //     outline: none;
+  //   }
+  // }
+ 
+}
+
+
+.mycheckout {
+  width: 100%;
+  position: relative;
+
+  .card1 {
+    width: 100%;
+    max-width: 300px;
+    padding: 1rem;
+    h3 {
+      font-weight: 300;
+    }
+  }
+
+  form {
+    width: 120%;
+    display: flex;
+
+    div {
+      width: 100%;
+    }
+
+    label {
+      display: block;
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+    input[type="text"],
+    .select,
+    .card-details {
+      display: block;
+      font-size: 1.6rem;
+      font-weight: 300;
+      padding: 1rem;
+      margin: 1rem auto;
+      width: 100%;
+      border: 1px solid #777;
+      border-radius: 3px;
+      outline: none;
+    }
+  }
+}
+.alert:checked + span {
+  border: 2px solid var(--color-primary);
+}
+@media screen and (max-width: 700px) {
+  .checkout {
+    form {
+      flex-direction: column;
+      div {
+        width: 100%;
+      }
+    }
+  }
+}
