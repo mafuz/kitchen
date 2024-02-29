@@ -73,7 +73,7 @@ function HomeScreen() {
     const fetchpieData = async () => {
       try {
         const { data } = await axios.get(
-          `${url}/api/products/latest`,
+          `https://backend-5fjm.onrender.com/api/products/latest`,
           {
             // headers: { Authorization: `Bearer ${userInfo.token}` },
           }
