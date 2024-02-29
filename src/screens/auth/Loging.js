@@ -15,7 +15,8 @@ function Loging() {
     const { search } = useLocation();
     const redirectInUrl = new URLSearchParams(search).get('redirect');
     const redirect = redirectInUrl ? redirectInUrl : '/';
-
+const url = process.env.REACT_APP_DEV_BASE_URL;
+    
     const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -28,7 +29,7 @@ function Loging() {
     e.preventDefault();
     try {
       setLoading(true);
-      const { data } = await axios.post(`http://localhost:4000/authentication/login`, {
+      const { data } = await axios.post(`${url}/authentication/login`, {
         email,
         password,
       });
