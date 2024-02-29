@@ -18,7 +18,7 @@ export default function PaymentMethodScreen() {
   const navigate = useNavigate();
   const { search } = useLocation();
   const redirectInUrl = new URLSearchParams(search).get('redirect');
-  const redirect = redirectInUrl ? redirectInUrl : '/shipping';
+  const redirect = redirectInUrl ? redirectInUrl : '/checkout-details';
   const { state, dispatch: ctxDispatch } = useContext(Store);
   const {
     cart: { shippingAddress, paymentMethod },
