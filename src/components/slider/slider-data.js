@@ -18,7 +18,7 @@ export const sliderData = [
   },
   {
     image: "https://i.ibb.co/ZNT1WHY/granutpaste.png",
-    heading: "Granut Paste",
+    heading: "Groundnut Paste",
     desc: "Up to 30% off on all onsale proucts.",
   },
   {
