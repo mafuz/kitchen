@@ -149,7 +149,7 @@ const generateKSKU = (category) => {
 
     try {
         setLoading(true);
-      const { data } = await axios.post(`http://localhost:4000/api/newproduct`, {
+      const { data } = await axios.post(`${url}/api/newproduct`, {
         p_name,
         sku: generateKSKU(category),
         price,
