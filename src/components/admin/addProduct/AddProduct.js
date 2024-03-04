@@ -47,6 +47,8 @@ function AddProduct() {
       error: '',
     }
   );
+const url = process.env.REACT_APP_DEV_BASE_URL;
+  
   let [loading, setLoading] = useState(false);
 
   const [p_name, setName] = useState('');
@@ -68,7 +70,7 @@ function AddProduct() {
       try {
         dispatch({ type: 'FETCH_REQUEST' });
         const { data } = await axios.get(
-          `http://localhost:4000/api/categories`,
+          `${url}/api/categories`,
           {
             headers: { authorization: 'Bearer ' + userInfo.token },
           }
@@ -88,7 +90,7 @@ function AddProduct() {
       try {
         
         const { data } = await axios.get(
-          'http://localhost:4000/api/brands'
+          `${url}/api/brands`
         );
         setBrands(data);
       
