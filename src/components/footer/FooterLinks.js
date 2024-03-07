@@ -63,8 +63,10 @@ function FooterLinks() {
           </div>
           <div className="footer-menu">
             <p className="link-heading">Contact us</p>
+              <p className="address">Digital Address:</p>
+            <p className="address">GA-408-7212</p>
             <p className="address">Address:</p>
-            <p className="address">280/7 Guggisburg Ave. Dansoman-Kamara, Accra, Ghana</p>
+            <p className="address">HOUSE NUMBER 280/7, NEAR RISING STAR ACADAMY, DANSOMAN-KAMARA GUGGISBERG AVENUE ACCRA</p>
             <br/>
             <p className="address">P.O Box DS 1244 Dansoman-Estate, Accra, Ghana</p>
             <br/>
