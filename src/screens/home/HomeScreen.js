@@ -155,7 +155,7 @@ function HomeScreen() {
         <section>
           <div className="container">
             <HomeInfoBox />
-            <PageHeading heading={'Shear Butter'} btnText={'Shop Now>>>'} />
+            <PageHeading heading={'Wrist Watch'} btnText={'Shop Now>>>'} />
             <ProductCategoryCarousel categorys={category} />
           </div>
         </section>
